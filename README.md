@@ -1,6 +1,6 @@
 # Safety Operator — Open Source AI "Seatbelt"
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.xxxxx.svg)](https://doi.org/10.5281/zenodo.xxxxx)
+[![DOI]( https://zenodo.org/badge/DOI/10.5281/zenodo.16790421.svg)](https://doi.org/10.5281/zenodo.16790421)
 [![GitHub stars](https://img.shields.io/github/stars/DerekEarnhart/safety-operator?style=social)](https://github.com/DerekEarnhart/safety-operator/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/DerekEarnhart/safety-operator?style=social)](https://github.com/DerekEarnhart/safety-operator/network/members)
 
