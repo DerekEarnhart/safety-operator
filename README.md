@@ -58,8 +58,7 @@ print(filtered)
 
 ## 📊 Demo
 
-<!-- Replace demo.png with your screenshot or one‑pager -->
-![Safety Operator Demo](demo.png)
+Coming shorty..
 
 ---
 
