@@ -73,8 +73,8 @@ If you use this in research or production, please cite:
   title     = {Safety Operator — Open Source AI "Seatbelt"},
   year      = {2025},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.xxxxx},
-  url       = {https://doi.org/10.5281/zenodo.xxxxx}
+  doi       = {10.5281/zenodo.16790421},
+  url       = {https://doi.org/10.5281/zenodo.16790421}
 }
 ```
 
@@ -82,7 +82,7 @@ If you use this in research or production, please cite:
 
 ## 🔗 Links
 
-- 📜 [Zenodo DOI](https://doi.org/10.5281/zenodo.xxxxx)  
+- 📜 [Zenodo DOI](https://doi.org/10.5281/zenodo.16790421)  
 - 🗜️ [MIT License](LICENSE)
 
 ---
