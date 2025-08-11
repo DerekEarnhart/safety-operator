@@ -48,10 +48,10 @@ class SafetyWrapper:
         """
         x = np.asarray(logits)
         if x.ndim == 1:
-            return self.operator.apply(x, steps)
+            return self.operator.apply(x, steps=steps)
         elif x.ndim == 2:
             # Apply safety operator to each row independently
-            return np.stack([self.operator.apply(row, steps) for row in x], axis=0)
+            return np.stack([self.operator.apply(row, steps=steps) for row in x], axis=0)
         else:
             raise ValueError(
                 f"filter_logits only supports 1D or 2D arrays, got array with shape {x.shape}"

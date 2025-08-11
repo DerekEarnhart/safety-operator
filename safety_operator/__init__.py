@@ -7,6 +7,8 @@ regularization towards aligned behaviors. See the README.md for
 installation and usage examples.
 """
 
+__version__ = "0.1.0"
+
 from .config import SafetyConfig  # noqa: F401
 from .projector import SafeProjector  # noqa: F401
 from .regularizer import Regularizer  # noqa: F401
