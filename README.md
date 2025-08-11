@@ -33,6 +33,8 @@ pip install -e .
 
 ## 🛠 Quick Start
 
+### Python API
+
 ```python
 import numpy as np
 from safety_operator import SafetyOperator, SafetyConfig, SafeProjector, Regularizer, SafetyWrapper
@@ -54,11 +56,32 @@ filtered = wrapper.filter_logits(logits, steps=2)
 print(filtered)
 ```
 
+### Command Line Interface
+
+```bash
+# Filter a single vector
+safety-operator-demo --input "3.2,-1.0,0.5,8.0,-4.0" --safe-mask "1,1,1,0,0"
+
+# Filter with custom parameters
+safety-operator-demo --input data.npy --output filtered.npy \
+  --safe-mask "1,1,0" --alpha 0.5 --beta 0.2 --steps 5 --verbose
+```
+
 ---
 
 ## 📊 Demo
 
-Coming shorty..
+Run the interactive demo:
+
+```bash
+python examples/minimal_wrap.py
+```
+
+Or try the command-line interface:
+
+```bash
+safety-operator-demo --input "1.0,2.0,3.0" --safe-mask "1,1,0" --verbose
+```
 
 ---
 
@@ -83,6 +106,33 @@ If you use this in research or production, please cite:
 
 - 📜 [Zenodo DOI](https://doi.org/10.5281/zenodo.16790421)  
 - 🗜️ [MIT License](LICENSE)
+
+## 🧪 Testing
+
+Run the comprehensive test suite:
+
+```bash
+# Install development dependencies
+pip install -e .[dev]
+
+# Run tests
+pytest tests/ -v
+
+# Run with coverage
+pytest tests/ --cov=safety_operator --cov-report=html
+```
+
+## 📈 Benchmarks
+
+Run performance benchmarks:
+
+```bash
+# Install benchmark dependencies
+pip install -e .[benchmark]
+
+# Run benchmarks
+python benchmarks/benchmark_safety_operator.py
+```
 
 ---
 
